@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", sans-serif;
+}
+
+/* Quitar el puntito en las listas*/
+ul, ol {
+    list-style: none;
+} 
+/* Eliminar la decoración (el subrayado) en los enlaces*/
+ a {
+    text-decoration: none;
+}
+
+
+
+.seccion-1 img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.acerca-de {
+    width: 400px;
+    text-align: end;
+    padding: 2.5em;
+}
+.seccion-1 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+
+.seccion-2 img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#footer {
+    background-color: rgb(41, 26, 8);
+    color: white;
+    padding: 1em;
+    text-align: start;
+}
+
+header {
+    background-color: rgba(34, 33, 31, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+header li, a {
+    color: white;
+    font-size: 1.1em;
+}
+
+#footer a i.fa-solid.fa-star.fa-xl{
+    position: fixed;
+    bottom: 39px;
+    right: 39px;
+}
