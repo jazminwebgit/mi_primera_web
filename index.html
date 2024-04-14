@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esta es una ventana</title>
+    <title>Lucero Vega</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,30 +13,38 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://kit.fontawesome.com/d3d6b9ebf7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <div class="container">
+   <div class="encabezado">
         <header>
             <a href="index.html"><i class="fa-solid fa-star fa-xl" style="color: #ea86b1;"></i></a>
      
-            <nav>
-                <ul>
-                    <li><a href="index.html"></a> Inicio</li>
-                    <li><a href="index.html"></a>Acerca de mi</li>
-                    <li><a href="index.html"></a>Trabajos</li>
-                    <li><a href="index.html"></a>Servicios</li>
-                    <li><a href="index.html"></a>Contacto</li>
+            <nav class="navbar">
+                <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                <ul class="menu">
+                    <li class="uno"><a href="index.html"></a> Inicio</li>
+                    <li class="dos"><a href="index.html"></a>Acerca de mÍ</li>
+                    <li class="tres"><a href="index.html"></a>Trabajos</li>
+                    <li class="cuatro"><a href="index.html"></a>Servicios</li>
+                    <li class="cinco"><a href="index.html"></a>Contacto</li>
                  </ul>
              </nav>
+        
         </header>
+    </div>
      
-        <main id="seccion-principal">
+    <main id="seccion-principal">
             <section class="seccion-1">
                 <div class="acerca-de">
                     <h2>Acerca de mí</h2>
                     <p class="parrafo-1">¡Bienvenido a mi página! Aquí aprenderás más sobre mí</p>
                     <p class="parrafo-2">Me llamo Tere, nací en Buenos Aires y vivo en Caballito. Me gusta el helado y salir a pasear en días de sol. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen.</p>
                 </div>
+
                 <div class="acerca-imagen">
                     <img src="https://images.unsplash.com/photo-1708747496569-b38b4abaa58f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen personal">
                 </div>
@@ -46,82 +54,103 @@
                 <img src="img/photo-1709589865176-7c6ede164354.avif" alt="imagen carrusel">
             </section>
 
-        </main>
+    </main>
 
         
 
 
-        <div class="cursos">
-            <article class="card 1">
+    <div class="cursos">
+        <article class="card 1">
             
-                <figure class="card-figure uno">
-                    <img src="https://i.pinimg.com/originals/d3/37/e7/d337e7cd66f975803465f1e939103270.png" alt="imagen de logo wsp" class="card__img">
+            <figure class="card-figure uno">
+                <img src="https://i.pinimg.com/originals/d3/37/e7/d337e7cd66f975803465f1e939103270.png" alt="imagen de logo wsp" class="card__img"> 
+            </figure>
             
-                </figure>
-            
-                <section class="card__text">
+            <section class="card__text">
                     <h2>Spiderman</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus amet nulla expedita neque tempore necessitatibus quae, dolorum totam quas sunt rem culpa excepturi nobis enim, illo voluptatibus quasi facere esse.</p>
                     <p class="DISCOVER">DISCOVER</p>
-                </section>
+            </section>          
+        </article>
             
-            </article>
+        <article class="card 2">
             
-            <article class="card 2">
+            <figure class="card-figure dos">
+                <img src="https://i.pinimg.com/originals/d3/37/e7/d337e7cd66f975803465f1e939103270.png" alt="imagen de logo wsp" class="card__img">
+            </figure>
             
-                <figure class="card-figure dos">
-                    <img src="https://i.pinimg.com/originals/d3/37/e7/d337e7cd66f975803465f1e939103270.png" alt="imagen de logo wsp" class="card__img">
-            
-                </figure>
-            
-                <section class="card__text">
+            <section class="card__text">
                     <h2>Batman</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus amet nulla expedita neque tempore necessitatibus quae, dolorum totam quas sunt rem culpa excepturi nobis enim, illo voluptatibus quasi facere esse.</p>
                     <p class="DISCOVER">DISCOVER</p>
-                </section>
+            </section>
             
-            </article>
+        </article>
         
-            <article class="card 3">
+        <article class="card 3">
             
-                <figure class="card-figure tres">
-                    <img src="https://i.pinimg.com/originals/d3/37/e7/d337e7cd66f975803465f1e939103270.png" alt="imagen de logo wsp" class="card__img">
+            <figure class="card-figure tres">
+                <img src="https://i.pinimg.com/originals/d3/37/e7/d337e7cd66f975803465f1e939103270.png" alt="imagen de logo wsp" class="card__img">
+            </figure>
             
-                </figure>
-            
-                <section class="card__text">
+            <section class="card__text">
                     <h2>Superman</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus amet nulla expedita neque tempore necessitatibus quae, dolorum totam quas sunt rem culpa excepturi nobis enim, illo voluptatibus quasi facere esse.</p>
                     <p class="DISCOVER">DISCOVER</p>
-                </section>
+             </section>
             
-            </article>
+        </article>
         
-        </div>
-        
-
-
-        <footer>
-            <div id="footer">
-                <a href="index.html"><i class="fa-solid fa-star fa-xl" style="color: yellow;"></i></a>
-                <h3 class="fuente-acento"> Contacto</h3>
-                <nav>
-                    <ul>
-                       <li><a href="index.html">Instagram</a></li>
-                       <li><a href="index.html">TikTok</a></li>
-                       <li><a href="index.html">WhatsApp</a></li>
-                       <li></li>
-                    </ul>
-                    
-                </nav>
-        </div>
-        </footer>
-
-   </div>
-
+    </div>
+       
+    <section class="form-header">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
   
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div class="form-row">
+              <label for="email">Email</label>
+              <input 
+                  id="email" 
+                  name="email" 
+                  type="email"
+                  placeholder="pepe@gmail.com"
+                  required
+                  />
+          </div>
+          <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+              <button>Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"></p>
+        </form>
+  
+  
+    </section>
 
 
+    <footer>
+        <div id="footer">
+            <a href="index.html"><i class="fa-solid fa-star fa-xl" style="color: yellow;"></i></a>
+            <h3 class="fuente-acento"> Contacto</h3>
+            <nav>
+            <ul>
+                <li><a href="index.html">Instagram</a></li>
+                <li><a href="index.html">TikTok</a></li>
+                <li><a href="index.html">WhatsApp</a></li>
+            </ul>
+        
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
-</html>
 
+</html>

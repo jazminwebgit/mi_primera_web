@@ -1,77 +1,80 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
-/* Quitar el puntito en las listas*/
 ul, ol {
     list-style: none;
 } 
-/* Eliminar la decoración (el subrayado) en los enlaces*/
  a {
     text-decoration: none;
 }
 
-
-
-.seccion-1 img {
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-
-}
-
-.acerca-de {
-    width: 400px;
-    text-align: end;
-    padding: 2.5em;
-}
-.seccion-1 {
-    background-color: white;
+.encabezado {
+    background-color: rgb(72, 72, 72);
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 2em;
-}
-
-
-.seccion-2 img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-#footer {
-    background-color: rgb(41, 26, 8);
-    color: white;
-    padding: 1em;
-    text-align: start;
 }
 
 header {
-    background-color: rgba(34, 33, 31, 0.85);
+    box-sizing: border-box;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
+    align-items: center;  
+    justify-content: space-between;
+    width: 85%;
 }
-
 header nav ul {
     display: flex;
     gap: 1.5em;
 }
-
 header li, a {
     color: white;
     font-size: 1.1em;
 }
 
-#footer a i.fa-solid.fa-star.fa-xl{
-    position: fixed;
-    bottom: 39px;
-    right: 39px;
+
+
+
+/* "HERO" Seccion-1 = .acerca-de + .acerca-imagen */
+.seccion-1 {
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
 }
+.seccion-1 .acerca-de {
+    max-width: 250px;
+    text-align: center;
+    padding: 2em;
+}
+.seccion-1 .acerca-imagen {
+    max-width: 280px;
+    height: 300px;
+}
+.seccion-1 .acerca-imagen img {
+    max-width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center right;
+}
+
+
+.seccion-2 img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+
 
 
 
@@ -146,7 +149,280 @@ header li, a {
 }
 
 
+
+
+footer {
+    background-color: rgb(41, 26, 8);
+    width: 100%;
+}
+#footer {
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+}
+#footer a i.fa-solid.fa-star.fa-xl{
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+}
+.fuente-acento {
+   margin-bottom: 0; 
+}
+
+
+
+
+
+
+
+
+#check {
+    display: none;
+}
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/*  FORMULARIO CSS */
+section .form-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"]  {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+  
+  
+  
+  .form-row button {
+      margin-left: 120px; 
+  }
+
+  .formulario p {
+    color: red;
+  }
+  
+  
+/* ------------- Media Query para pantallas de más de 700px de resolución ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"], 
+    .form-row input[type="email"]  {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+
+    .form-row textarea {
+        width: 250px;
+    }
+
+      .form-row button {
+        margin-left: 120px; 
+    }
+}
+
+
+
+
 /* Estilos para pantallas más pequeñas (hasta 768px) */
 @media (max-width: 768px) {
-    background-color: white;
+
+.checkbtn {
+    display: block;
+}
+
+header ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh; 
+    background-color: rgb(98, 21, 21);
+    text-align: center;
+
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+    left: 0%;
+    display: block;
+}
+header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+header nav ul li a {
+    font-size: 20px;
+}
+#check:checked ~ .checkbtn {
+    color: rgb(213, 105, 47);
+}
+
+/* ACTIVE  */
+  .navbar.active ul.menu{
+    height: 100vh;
   }
+
+/* header {
+    background-color: burlywood;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .navbar {
+    height: 0vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #2c3e50;
+    text-align: center;
+
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+
+  .navbar ul.menu {
+    float: none;
+    display: block;
+    width: 174px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+
+  .navbar ul.menu li a:hover {
+    color: #b59a61;
+  }
+   ACTIVE 
+  .navbar.active ul.menu{
+    height: 100vh;
+  } */
+
+
+
+}
+
+
+
